@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="截屏即待办 (ScreenshotTodo) 官方网站 - 专为 iOS 设计的极速截图生成待办事项工具。本地 OCR 解析、锁屏实时活动展示、深度同步系统提醒事项，100% 隐私安全。">
+  <title>截屏即待办 - 本地智能识图，锁屏即刻同步</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">📸</div>
+        <span>截屏即待办</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">首页</a></li>
+          <li><a href="support.html">技术支持</a></li>
+          <li><a href="privacy.html">隐私政策</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Showcase -->
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="badge">iOS 17+ 原生效率工具</div>
+        <h1>截屏，即是待办。</h1>
+        <p class="hero-subtitle">
+          随手截屏，即可在本地瞬间解析文字、提取截止时间与二维码，并以 Live Activity 锁屏实时活动呈现，完美与系统原生「提醒事项」深度同步。
+        </p>
+        <div class="hero-actions">
+          <a href="#guide" class="btn btn-primary">📖 查看配置指南</a>
+          <a href="support.html" class="btn btn-secondary">✉️ 反馈与支持</a>
+        </div>
+      </div>
+      
+      <!-- CSS Animated Mockup -->
+      <div class="hero-visual">
+        <div class="mockup-container">
+          <div class="phone-screen">
+            <div class="phone-island"></div>
+            <div class="phone-header">
+              <span>9:41</span>
+              <span>🔋 100%</span>
+            </div>
+            
+            <div class="mockup-screen-flow">
+              <!-- Screenshot Box -->
+              <div class="mockup-image-box">
+                <span style="font-size: 2rem;">🖼️</span>
+                <span style="font-size: 0.75rem; opacity: 0.8; font-weight: 500;">模拟截屏输入</span>
+                <div style="background: rgba(0,0,0,0.4); padding: 0.35rem 0.65rem; border-radius: 6px; font-size: 0.65rem; font-family: monospace; text-align: left; margin-top: 0.25rem;">
+                  ☕️<br>健身买咖啡喝<br>今晚 21:28 前
+                </div>
+                <div class="mockup-ocr-line"></div>
+              </div>
+              
+              <!-- Process Transition -->
+              <div style="text-align: center; color: var(--secondary); font-size: 1.2rem; margin: -0.25rem 0;">
+                ⚡️
+              </div>
+              
+              <!-- Parsed Capsule -->
+              <div class="mockup-capsule">
+                <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 0.35rem;">
+                  <span style="font-weight: 600; font-size: 0.85rem; color: #fff;">☕️ 咖啡待办</span>
+                  <span style="background: #10b981; color: #fff; font-size: 0.6rem; padding: 0.1rem 0.35rem; border-radius: 9999px;">0/1 已完成</span>
+                </div>
+                <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                  🏃 健身买咖啡喝
+                </div>
+                <div style="font-size: 0.65rem; color: var(--accent); margin-top: 0.25rem; display: flex; align-items: center; gap: 0.25rem;">
+                  <span>⏰ 截止时间:</span>
+                  <span style="font-weight: 500;">今天 21:28</span>
+                </div>
+                <div style="font-size: 0.6rem; color: #64748b; margin-top: 0.25rem; text-align: right;">
+                  🔄 已同步系统提醒事项
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Features Grid -->
+    <section>
+      <h2>应用核心特色</h2>
+      <div class="features-grid">
+        <div class="glass-card feature-card">
+          <div class="feature-icon">🚀</div>
+          <h3>极速截图触发</h3>
+          <p>无需繁琐的导出分享。通过 iOS 的「背面轻点」或「操作按钮」一键运行快捷指令，自动获取相册最新截屏并静默调起 App 自动处理。</p>
+        </div>
+        <div class="glass-card feature-card">
+          <div class="feature-icon">🧠</div>
+          <h3>本地智能 OCR 解析</h3>
+          <p>调用苹果官方 Vision 框架。在设备本地安全识别图片中的文字和二维码。采用本地规则解析器，秒级自动抓取任务截止时间，保护数据绝对安全。</p>
+        </div>
+        <div class="glass-card feature-card">
+          <div class="feature-icon">🔔</div>
+          <h3>系统级原生同步</h3>
+          <p>使用 EventKit API 深度同步系统「提醒事项 (Reminders)」。您通过截屏生成的待办任务可直接显示在苹果官方日程中，更支持跨设备云同步。</p>
+        </div>
+        <div class="glass-card feature-card">
+          <div class="feature-icon">📱</div>
+          <h3>锁屏实时活动</h3>
+          <p>借由 ActivityKit 支持，任务进度将在您的 iOS 锁定屏幕及灵动岛（Live Activity）中直观呈现，并自动带有截图缩略图，抬手即可概览进度。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Setup Guide -->
+    <section id="guide" class="guide-section">
+      <h2 style="margin-bottom: 1.5rem;">快捷指令配置指引</h2>
+      <p style="text-align: center; color: var(--text-secondary); margin-bottom: 3rem; font-size: 1rem;">
+        iOS 系统原生不提供“完成截图后静默执行”的触发器。因此，App 采用快捷指令作为执行入口。您仅需 3 分钟即可完成配置。
+      </p>
+
+      <div class="guide-step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h3>新建快捷指令</h3>
+          <p>打开系统自带的 <b>「快捷指令 (Shortcuts)」</b> 应用，点击右上角的 <b>「+」</b> 新建，将其命名为 <code>截图即待办</code>。</p>
+        </div>
+      </div>
+
+      <div class="guide-step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h3>获取最新照片截图</h3>
+          <p>在快捷指令中添加一个操作：<b>「查找照片」</b>，并在过滤器中进行如下配置限制，以准确获取刚刚生成的最新截图：</p>
+          <div class="guide-shortcut-code">■ 媒体类型 是 图像
+■ 相簿 是 截屏
+■ 排序方式 选择“创建日期”，顺序为“最新优先”
+■ 限制 开启，并设置仅获取 1 张照片</div>
+        </div>
+      </div>
+
+      <div class="guide-step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h3>调用 App 意图处理</h3>
+          <p>添加下一个操作，搜索并添加本 App 的 <b>「处理截图待办 (Process Screenshot Todo)」</b> 操作：</p>
+          <p style="margin-top: 0.5rem;">将上一步「查找照片」所输出的 <code>照片</code> 传入作为 <code>截图</code> 参数。</p>
+        </div>
+      </div>
+
+      <div class="guide-step">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <h3>绑定极速触发按键</h3>
+          <p>推荐将该快捷指令绑定在系统级物理触发入口，享受一键截图后立刻生成待办的爽快体验：</p>
+          <ul style="margin-top: 0.75rem; padding-left: 1.25rem; color: var(--text-secondary); font-size: 0.9rem;">
+            <li style="margin-bottom: 0.35rem;"><b>轻点背面</b>：前往「系统设置 > 辅助功能 > 触控 > 轻点背面」，在轻点两下或三下中，下拉选择刚刚创建的快捷指令 <code>截图即待办</code>。</li>
+            <li><b>操作按钮 (Action Button)</b>：前往「系统设置 > 操作按钮」，左右滑动选择「快捷指令」，指定为 <code>截图即待办</code>。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-info">
+        <div class="logo" style="margin-bottom: 0.5rem;">
+          <div class="logo-icon" style="width:28px; height:28px; font-size: 1rem;">📸</div>
+          <span style="font-size: 1.1rem;">截屏即待办</span>
+        </div>
+        <p>© 2026 截屏即待办 App. 保留所有权利。</p>
+        <p>专为个人效率与数据绝对隐私安全打造。</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">首页</a>
+        <a href="support.html">技术支持</a>
+        <a href="privacy.html">隐私政策</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
