@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ScreenshotTodo Official Privacy Policy. We respect your privacy. All processing is 100% on-device with zero external servers.">
+  <title>Privacy Policy - ScreenshotTodo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="index_en.html" class="logo">
+        <div class="logo-icon">📸</div>
+        <span>ScreenshotTodo</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index_en.html">Home</a></li>
+          <li><a href="support_en.html">Support</a></li>
+          <li><a href="privacy_en.html" class="active">Privacy Policy</a></li>
+          <li><a href="privacy.html" style="opacity: 0.85; font-size: 0.85rem; padding: 0.2rem 0.5rem; border: 1px solid rgba(255,255,255,0.2); border-radius: 6px;">中文</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Privacy Policy Content -->
+  <main>
+    <div class="privacy-container">
+      <h2 style="margin-bottom: 1rem;">Privacy Policy</h2>
+      <p style="text-align: center; color: var(--text-secondary); margin-bottom: 3rem; font-size: 0.95rem;">
+        Effective Date: June 13, 2026
+      </p>
+
+      <div class="glass-card privacy-card">
+        <p>The "ScreenshotTodo" application ("the App" or "We") values your privacy and personal data security. This Privacy Policy explains how data is processed by the App. Our core commitment is: <b>Your data belongs entirely to you. We do not collect, store, or transmit any of your private information to third-party servers.</b></p>
+        
+        <h3>1. Zero-Server Architecture & On-Device Processing</h3>
+        <p>The App operates entirely offline and <b>maintains no cloud servers</b>.
+          <ul>
+            <li>Text recognition (OCR) and QR code scanning from screenshots are executed in real-time on your device using iOS's native <code>Vision</code> framework.</li>
+            <li>Due date parsing is performed locally via on-device regex and date parsing logic without using external AI API servers.</li>
+            <li>We cannot and do not collect your screenshots, recognized text, or generated task items.</li>
+          </ul>
+        </p>
+
+        <h3>2. Apple Reminders Sync (EventKit)</h3>
+        <p>The App requests access to Apple Reminders to sync tasks created from screenshots:
+          <ul>
+            <li>Tasks are written to your native Apple Reminders app using iOS's official <code>EventKit</code> API.</li>
+            <li>Any multi-device synchronization is managed securely via Apple's official <b>iCloud</b> infrastructure under Apple's privacy policy.</li>
+            <li>Developers have no access to your iCloud data.</li>
+          </ul>
+        </p>
+
+        <h3>3. Permissions</h3>
+        <p>The App may request the following permissions for core functionality:
+          <ul>
+            <li><b>Reminders (EventKit)</b>: To save and sync generated tasks to native Apple Reminders.</li>
+            <li><b>Photos Access</b>: When executing Shortcuts with recent screenshots, the App reads only the specified screenshot. We do not scan your photo library in the background.</li>
+          </ul>
+          You can revoke permissions anytime in iOS Settings > Privacy & Security.
+        </p>
+
+        <h3>4. Third-Party Analytics & Tracking</h3>
+        <p><b>ScreenshotTodo contains zero third-party advertising SDKs, analytics frameworks (such as Firebase or Google Analytics), or behavioral trackers.</b> We do not collect device identifiers (IDFA/UUID) or track user usage.</p>
+
+        <h3>5. Policy Updates</h3>
+        <p>We may update this Privacy Policy to align with new app features or Apple Developer Policy updates. Any changes will be posted on this page.</p>
+
+        <h3>6. Contact Us</h3>
+        <p>If you have any questions or feedback regarding this Privacy Policy, feel free to contact us via email:<br>
+          <a href="mailto:yebaihan@qq.com" style="color: var(--secondary); text-decoration: none; font-weight: 500;">yebaihan@qq.com</a>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-info">
+        <div class="logo" style="margin-bottom: 0.5rem;">
+          <div class="logo-icon" style="width:28px; height:28px; font-size: 1rem;">📸</div>
+          <span style="font-size: 1.1rem;">ScreenshotTodo</span>
+        </div>
+        <p>© 2026 ScreenshotTodo App. All rights reserved.</p>
+        <p>Built for personal productivity and ultimate privacy.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index_en.html">Home</a>
+        <a href="support_en.html">Support</a>
+        <a href="privacy_en.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

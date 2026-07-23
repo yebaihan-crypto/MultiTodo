@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ScreenshotTodo Official Website - A swift screenshot-to-task productivity tool for iOS. On-device OCR, Lock Screen Live Activity, deep Apple Reminders sync, 100% private.">
+  <title>ScreenshotTodo - Turn Screenshots into Actionable Tasks On-Device</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="index_en.html" class="logo">
+        <div class="logo-icon">📸</div>
+        <span>ScreenshotTodo</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index_en.html" class="active">Home</a></li>
+          <li><a href="support_en.html">Support</a></li>
+          <li><a href="privacy_en.html">Privacy Policy</a></li>
+          <li><a href="index.html" style="opacity: 0.85; font-size: 0.85rem; padding: 0.2rem 0.5rem; border: 1px solid rgba(255,255,255,0.2); border-radius: 6px;">中文</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Showcase -->
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="badge">iOS 17+ Native Productivity Tool</div>
+        <h1>Snap. OCR. Done.</h1>
+        <p class="hero-subtitle">
+          Take a screenshot to extract text, due dates, and QR codes instantly on-device. View progress via Live Activity, and sync seamlessly with Apple Reminders.
+        </p>
+        <div class="hero-actions">
+          <a href="#guide" class="btn btn-primary">📖 Setup Guide</a>
+          <a href="support_en.html" class="btn btn-secondary">✉️ Support & Feedback</a>
+        </div>
+      </div>
+      
+      <!-- CSS Animated Mockup -->
+      <div class="hero-visual">
+        <div class="mockup-container">
+          <div class="phone-screen">
+            <div class="phone-island"></div>
+            <div class="phone-header">
+              <span>9:41</span>
+              <span>🔋 100%</span>
+            </div>
+            
+            <div class="mockup-screen-flow">
+              <!-- Screenshot Box -->
+              <div class="mockup-image-box">
+                <span style="font-size: 2rem;">🖼️</span>
+                <span style="font-size: 0.75rem; opacity: 0.8; font-weight: 500;">Screenshot Input</span>
+                <div style="background: rgba(0,0,0,0.4); padding: 0.35rem 0.65rem; border-radius: 6px; font-size: 0.65rem; font-family: monospace; text-align: left; margin-top: 0.25rem;">
+                  ☕️<br>Buy coffee after workout<br>Due tonight 9:28 PM
+                </div>
+                <div class="mockup-ocr-line"></div>
+              </div>
+              
+              <!-- Process Transition -->
+              <div style="text-align: center; color: var(--secondary); font-size: 1.2rem; margin: -0.25rem 0;">
+                ⚡️
+              </div>
+              
+              <!-- Parsed Capsule -->
+              <div class="mockup-capsule">
+                <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 0.35rem;">
+                  <span style="font-weight: 600; font-size: 0.85rem; color: #fff;">☕️ Coffee Task</span>
+                  <span style="background: #10b981; color: #fff; font-size: 0.6rem; padding: 0.1rem 0.35rem; border-radius: 9999px;">0/1 Done</span>
+                </div>
+                <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                  🏃 Buy coffee after workout
+                </div>
+                <div style="font-size: 0.65rem; color: var(--accent); margin-top: 0.25rem; display: flex; align-items: center; gap: 0.25rem;">
+                  <span>⏰ Due:</span>
+                  <span style="font-weight: 500;">Today 9:28 PM</span>
+                </div>
+                <div style="font-size: 0.6rem; color: #64748b; margin-top: 0.25rem; text-align: right;">
+                  🔄 Synced to Apple Reminders
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Features Grid -->
+    <section>
+      <h2>Key Features</h2>
+      <div class="features-grid">
+        <div class="glass-card feature-card">
+          <div class="feature-icon">🚀</div>
+          <h3>Instant Shortcut Trigger</h3>
+          <p>Run silently via iOS "Back Tap" or "Action Button". Automatically fetches the latest screenshot and processes it in seconds.</p>
+        </div>
+        <div class="glass-card feature-card">
+          <div class="feature-icon">🧠</div>
+          <h3>On-Device OCR Intelligence</h3>
+          <p>Powered by Apple's Vision framework. Recognizes text and QR codes locally with 100% privacy and zero cloud server dependencies.</p>
+        </div>
+        <div class="glass-card feature-card">
+          <div class="feature-icon">🔔</div>
+          <h3>Apple Reminders Sync</h3>
+          <p>Deep EventKit integration. Tasks automatically save to your native Apple Reminders app and sync across all your devices via iCloud.</p>
+        </div>
+        <div class="glass-card feature-card">
+          <div class="feature-icon">📱</div>
+          <h3>Lock Screen Live Activity</h3>
+          <p>Track task progress right on your iOS Lock Screen & Dynamic Island with ActivityKit, complete with screenshot thumbnails.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Setup Guide -->
+    <section id="guide" class="guide-section">
+      <h2 style="margin-bottom: 1.5rem;">Shortcuts Setup Guide</h2>
+      <p style="text-align: center; color: var(--text-secondary); margin-bottom: 3rem; font-size: 1rem;">
+        Set up in just 3 minutes to turn screenshots into actionable tasks effortlessly.
+      </p>
+
+      <div class="guide-step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h3>Create a New Shortcut</h3>
+          <p>Open the native <b>Shortcuts</b> app on iOS, tap <b>"+"</b> to create a new shortcut, and name it <code>ScreenshotTodo</code>.</p>
+        </div>
+      </div>
+
+      <div class="guide-step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h3>Get Latest Screenshot</h3>
+          <p>Add action: <b>"Find Photos"</b>, and configure filters to retrieve the latest screenshot:</p>
+          <div class="guide-shortcut-code">■ Media Type is Image
+■ Album is Screenshots
+■ Sort by "Date Taken", Order "Latest First"
+■ Limit to 1 Photo</div>
+        </div>
+      </div>
+
+      <div class="guide-step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h3>Process Screenshot</h3>
+          <p>Add action: <b>"Process Screenshot Todo"</b> from this app, and pass the photo output from Step 2 as the <code>Screenshot</code> parameter.</p>
+        </div>
+      </div>
+
+      <div class="guide-step">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <h3>Bind Physical Trigger</h3>
+          <p>Assign the shortcut to a physical trigger for instant task creation:</p>
+          <ul style="margin-top: 0.75rem; padding-left: 1.25rem; color: var(--text-secondary); font-size: 0.9rem;">
+            <li style="margin-bottom: 0.35rem;"><b>Back Tap</b>: Settings > Accessibility > Touch > Back Tap, assign to <code>ScreenshotTodo</code>.</li>
+            <li><b>Action Button</b>: Settings > Action Button, select Shortcut > <code>ScreenshotTodo</code>.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-info">
+        <div class="logo" style="margin-bottom: 0.5rem;">
+          <div class="logo-icon" style="width:28px; height:28px; font-size: 1rem;">📸</div>
+          <span style="font-size: 1.1rem;">ScreenshotTodo</span>
+        </div>
+        <p>© 2026 ScreenshotTodo App. All rights reserved.</p>
+        <p>Built for personal productivity and ultimate privacy.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index_en.html">Home</a>
+        <a href="support_en.html">Support</a>
+        <a href="privacy_en.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
