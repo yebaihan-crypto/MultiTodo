@@ -56,13 +56,17 @@
           </ul>
         </p>
 
-        <h3>3. Permissions</h3>
-        <p>The App may request the following permissions for core functionality:
+        <h3>3. Permissions & System Access</h3>
+        <p>The App requests only the permissions necessary to provide core features, and all processing is handled strictly on-device:
           <ul>
-            <li><b>Reminders (EventKit)</b>: To save and sync generated tasks to native Apple Reminders.</li>
-            <li><b>Photos Access</b>: When executing Shortcuts with recent screenshots, the App reads only the specified screenshot. We do not scan your photo library in the background.</li>
+            <li><b>Reminders (EventKit)</b>: To save and sync generated tasks to native Apple Reminders, enabling seamless iCloud sync across your Apple devices.</li>
+            <li><b>Photos Access (Photo Library)</b>: When executing Shortcuts with screenshots, the App reads only the screenshot you selected to perform local on-device Vision OCR. We never scan your library in the background.</li>
+            <li><b>Microphone & Speech Recognition</b>: Used for voice-based quick task entry. Voice audio is transcribed locally using iOS's built-in Speech framework and is never sent to external servers.</li>
+            <li><b>Location (When In Use)</b>: Used exclusively to calculate real-time distance to task locations for check-ins locally. We do not track or store your location history.</li>
+            <li><b>Journaling Suggestions</b>: Used to read suggestions you explicitly select (podcasts, workouts, music) to generate daily capsule cards locally.</li>
+            <li><b>Live Activities</b>: Used to display real-time task progress on your Lock Screen and Dynamic Island. Data remains solely within device memory and local App Group storage.</li>
           </ul>
-          You can revoke permissions anytime in iOS Settings > Privacy & Security.
+          You can inspect or revoke any of these permissions at any time in iOS Settings > Privacy & Security.
         </p>
 
         <h3>4. Third-Party Analytics & Tracking</h3>
