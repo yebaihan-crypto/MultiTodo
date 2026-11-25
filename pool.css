@@ -1,4 +1,4 @@
-/* Dotney — Pool-Inspired Visual Design Language
+/* ScreenshotTodo（截图即待办） — Pool-Inspired Visual Design Language
    Pure-black canvas, subtle dot matrix grid, monospace typography, restrained elegance */
 
 @import url('https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=Inter:wght@400;500;600&display=swap');
@@ -69,7 +69,6 @@ body {
   font-weight: 400;
   letter-spacing: .18em;
   color: hsl(var(--foreground) / .88);
-  text-transform: uppercase;
 }
 
 .crumb a {
