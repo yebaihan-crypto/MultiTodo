@@ -1,144 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#000000">
-  <title>Privacy Policy — ScreenshotTodo</title>
-  <meta name="description" content="ScreenshotTodo Official Privacy Policy. Modeled on Pool.day compliance standards: How ScreenshotTodo handles screenshots, thoughts, and AI inferences with on-device sandbox storage, no model training, and zero tracking.">
-  <link rel="icon" href="assets/app-icon.png">
-  <link rel="stylesheet" href="pool.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <meta name="apple-itunes-app" content="app-id=6780206676">
+    <title>ScreenshotTodo — Capture screenshots. Turn ideas into action.</title>
+    <meta name="description" content="ScreenshotTodo is a minimalist on-device iOS utility that turns screenshots and voice thoughts into structured tasks and inspiration vaults—100% local privacy.">
+    <link rel="icon" type="image/png" href="assets/app-icon.png">
+    <link rel="apple-touch-icon" href="assets/app-icon.png">
+    <link rel="stylesheet" href="home.css">
 </head>
-<body>
+<body class="show-en">
+    <header>
+        <a href="index_en.html" class="logo" data-zh-href="index.html" data-en-href="index_en.html">
+            <span class="lang-zh">截图即待办</span>
+            <span class="lang-en">ScreenshotTodo</span>
+        </a>
+        <nav>
+            <a href="index_en.html" class="nav-link nav-home active" data-zh-href="index.html" data-en-href="index_en.html">
+                <span class="lang-zh">首页</span>
+                <span class="lang-en">Home</span>
+            </a>
+            <a href="privacy_en.html" class="nav-link" data-zh-href="privacy.html" data-en-href="privacy_en.html">
+                <span class="lang-zh">隐私政策</span>
+                <span class="lang-en">Privacy</span>
+            </a>
+            <a href="terms_en.html" class="nav-link" data-zh-href="terms.html" data-en-href="terms_en.html">
+                <span class="lang-zh">使用条款</span>
+                <span class="lang-en">Terms</span>
+            </a>
+            <a href="mailto:yebaihan@qq.com" class="nav-link">
+                <span class="lang-zh">支持</span>
+                <span class="lang-en">Support</span>
+            </a>
+            <button class="lang-toggle" onclick="toggleLanguage()" aria-label="Switch language">
+                <span class="lang-zh">EN</span>
+                <span class="lang-en">中文</span>
+            </button>
+        </nav>
+    </header>
 
-<div class="dotted-bg">
-  <div class="page">
+    <main>
+        <section class="hero">
+            <img class="app-icon" src="assets/app-icon.png" alt="ScreenshotTodo app icon">
+            <h1>
+                <span class="lang-zh">截屏即灵感，<br>随手变成待办</span>
+                <span class="lang-en">Capture screenshots.<br>Turn ideas into action.</span>
+            </h1>
+            <p class="subtitle">
+                <span class="lang-zh">一款为去待办与灵感收藏而生的极简纯本地工具</span>
+                <span class="lang-en">A minimalist on-device vault for screenshots, voice notes &amp; smart tasks</span>
+            </p>
+            <div class="download-container">
+                <a href="https://apps.apple.com/app/id6780206676" target="_blank" rel="noopener noreferrer" class="download-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91 1.65.17 2.75.92 3.4 1.84-2.73 1.5-2.22 5.09.43 6.13-.57 1.54-1.38 3.01-2.04 4.09z"/>
+                        <path d="M15.11 6.19C15.82 5.3 16.29 4.09 16.16 2.87c-1.12.05-2.43.76-3.17 1.63-.66.77-1.22 2.01-1.07 3.2 1.24.1 2.47-.63 3.19-1.51z"/>
+                    </svg>
+                    <span class="lang-zh">App Store (iOS / iPad)</span>
+                    <span class="lang-en">App Store (iOS / iPad)</span>
+                </a>
+            </div>
+        </section>
 
-    <!-- Header & Language Switch -->
-    <div class="header-row">
-      <p class="crumb"><a href="privacy_en.html">ScreenshotTodo</a><span class="sep">/</span>PRIVACY POLICY</p>
-      <div class="lang-switch">
-        <a href="privacy.html">中文</a>
-      </div>
-    </div>
+        <section class="showcase" aria-label="App Screenshots">
+            <div class="showcase-grid">
+                <figure class="showcase-item">
+                    <img src="assets/screenshots/screen-01.jpg" alt="Instant Screenshot To-Do" loading="eager">
+                </figure>
+                <figure class="showcase-item">
+                    <img src="assets/screenshots/screen-02.jpg" alt="Voice Input and AI Organization" loading="lazy">
+                </figure>
+                <figure class="showcase-item">
+                    <img src="assets/screenshots/screen-03.jpg" alt="Lock-screen Widgets" loading="lazy">
+                </figure>
+                <figure class="showcase-item">
+                    <img src="assets/screenshots/screen-04.jpg" alt="1-Month Free Trial Lockscreen Todolist" loading="lazy">
+                </figure>
+            </div>
+        </section>
 
-    <!-- Title & Effective Date -->
-    <div class="section">
-      <h1 class="page-title">Privacy Policy</h1>
-      <p class="note">Effective Date: September 30, 2026</p>
-      <p>The "ScreenshotTodo" application ("ScreenshotTodo," "the App," "we," "our," or "us") is crafted to help users capture, understand, organize, and collect screenshots, spontaneous thoughts, and clipboard items freely without task deadline anxiety ("Anti-Todo Inspiration Vault").</p>
-      <p>Because screenshot and personal note content can be deeply personal, this Policy is written to describe in <b>direct, transparent, and rigorous terms</b> what information we process, how artificial intelligence assists in understanding, how data is stored, and your complete rights and choices.</p>
-    </div>
+        <section class="features">
+            <div class="feature-card">
+                <h3>
+                    <span class="lang-zh">截屏即刻识别，结构化归纳</span>
+                    <span class="lang-en">Instant Screenshot To-Do</span>
+                </h3>
+                <p>
+                    <span class="lang-zh">调用 Apple 原生 Vision 框架在本地提取截图文字、时间与来源应用，自动整理成日程、书影音、好物或行动待办，告别杂乱相册。</span>
+                    <span class="lang-en">Extracts text, dates, and source apps locally via Apple Vision OCR—turning screenshots into structured tasks and 12 curated inspiration vaults.</span>
+                </p>
+            </div>
+            <div class="feature-card">
+                <h3>
+                    <span class="lang-zh">语音速记，AI 智能拆解</span>
+                    <span class="lang-en">Voice Input &amp; AI Sorting</span>
+                </h3>
+                <p>
+                    <span class="lang-zh">长按即说，iOS 原生语音实时本地转写，一口气记下的多件事也能被 AI 自动拆解并归类到对应标签下。</span>
+                    <span class="lang-en">Dictate fleeting thoughts on-device with native Speech recognition and let AI automatically break down and organize multi-part tasks.</span>
+                </p>
+            </div>
+            <div class="feature-card">
+                <h3>
+                    <span class="lang-zh">锁屏组件与实时看板</span>
+                    <span class="lang-en">Lock-Screen Widgets</span>
+                </h3>
+                <p>
+                    <span class="lang-zh">丰富的锁屏小组件与实时活动卡片，取件码、日程提醒与日常习惯抬眼即见，顺手完成而不被死线焦虑绑架。</span>
+                    <span class="lang-en">Access reminders, schedules, and daily routines directly from your iOS Lock Screen and Live Activities at a glance.</span>
+                </p>
+            </div>
+            <div class="feature-card">
+                <h3>
+                    <span class="lang-zh">100% 本地沙盒，零追踪</span>
+                    <span class="lang-en">100% On-Device Privacy</span>
+                </h3>
+                <p>
+                    <span class="lang-zh">免注册登录，无任何广告或行为追踪 SDK。所有截图原图与灵感卡片均保存在设备本地沙盒，绝不用作模型训练。</span>
+                    <span class="lang-en">Zero accounts, zero trackers, and zero ad SDKs. Screenshots and cards stay strictly inside your device sandbox and are never used for AI training.</span>
+                </p>
+            </div>
+        </section>
+    </main>
 
-    <hr class="rule">
+    <footer>
+        <div class="footer-links">
+            <a href="https://apps.apple.com/app/id6780206676" target="_blank" rel="noopener noreferrer">
+                <span class="lang-zh">App Store 下载</span>
+                <span class="lang-en">App Store</span>
+            </a>
+            <a href="privacy_en.html" data-zh-href="privacy.html" data-en-href="privacy_en.html">
+                <span class="lang-zh">隐私政策</span>
+                <span class="lang-en">Privacy Policy</span>
+            </a>
+            <a href="terms_en.html" data-zh-href="terms.html" data-en-href="terms_en.html">
+                <span class="lang-zh">使用条款 (EULA)</span>
+                <span class="lang-en">Terms of Use (EULA)</span>
+            </a>
+            <a href="mailto:yebaihan@qq.com">
+                <span class="lang-zh">联系开发者</span>
+                <span class="lang-en">Support</span>
+            </a>
+        </div>
+        <div class="copyright">
+            <span class="lang-zh">&copy; 2026 截图即待办. 保留所有权利。</span>
+            <span class="lang-en">&copy; 2026 ScreenshotTodo. All rights reserved.</span>
+        </div>
+    </footer>
 
-    <!-- Section 1 -->
-    <div class="section">
-      <h2>1. Information We Process</h2>
-      <p><b>Content You Provide &amp; Import</b>:</p>
-      <ul>
-        <li>Screenshots and photos you explicitly import or send into the vault via Shortcuts "Teleport".</li>
-        <li>Spontaneous thoughts, notes, and clipboard texts or URLs you create or paste.</li>
-      </ul>
+    <script>
+        function syncLangLinks(isEn) {
+            document.documentElement.lang = isEn ? 'en' : 'zh-CN';
+            document.title = isEn
+                ? 'ScreenshotTodo — Capture screenshots. Turn ideas into action.'
+                : '截图即待办 — 截屏即灵感，随手变成待办';
+            document.querySelectorAll('a[data-zh-href][data-en-href]').forEach(function (el) {
+                el.setAttribute('href', isEn ? el.dataset.enHref : el.dataset.zhHref);
+            });
+        }
 
-      <p><b>Permissions &amp; Device Sources</b>:</p>
-      <ul>
-        <li><b>Photo Library Access</b>: Used exclusively to access screenshots you select or pass via Shortcuts. We never scan your photo library in the background.</li>
-        <li><b>Microphone &amp; Speech Recognition</b>: Used only when you hold the microphone button to dictate a thought locally using iOS's native Speech framework. Audio is transcribed on-device and never uploaded.</li>
-        <li><b>Apple Reminders (EventKit)</b>: Invoked only when you explicitly export an inspiration card to native Apple Reminders.</li>
-        <li><b>Location (When In Use)</b>: Used strictly on-device to compute real-time distance to place cards; we do not track routes or upload location data.</li>
-      </ul>
+        function toggleLanguage() {
+            var isEn = document.body.classList.toggle('show-en');
+            localStorage.setItem('lang', isEn ? 'en' : 'zh');
+            syncLangLinks(isEn);
+        }
 
-      <p><b>Derived Data &amp; AI Inferences</b>:</p>
-      <ul>
-        <li>Text extracted from screenshots via Apple's native <code>Vision</code> OCR framework.</li>
-        <li>Inferred structured tags: 12 inspiration categories (Schedule, Movie, Book, Music, Routine, Place, PromoCode, Wishlist, Profile, Video, Action, Photo).</li>
-        <li>Concise titles, emojis, key takeaways, and action steps (Todos) derived via AI.</li>
-      </ul>
-
-      <p><b>Zero-Account Architecture</b>: ScreenshotTodo requires no sign-up or login credentials. We do not collect phone numbers, email addresses, or social accounts, and we do not link activity to personal real-world identities.</p>
-    </div>
-
-    <!-- Section 2 -->
-    <div class="section">
-      <h2>2. How We Use Information &amp; AI Processing</h2>
-      <p>We process information solely to deliver ScreenshotTodo's core product experience:</p>
-      <ul>
-        <li>To synthesize screenshot takeaways into fan-stacked inspiration cards.</li>
-        <li>To automatically categorize items across 12 distinct inspiration vaults.</li>
-        <li>To power lightweight Lock Screen and Dynamic Island companions via Live Activities.</li>
-      </ul>
-
-      <!-- Pool-style Callout -->
-      <div class="callout-box">
-        <h4>🔒 No Training on Your Content</h4>
-        <p><b>We do not use your screenshots, notes, extracted text, or any derived data to train or fine-tune artificial intelligence or machine-learning models.</b><br>
-        Your content is processed solely to deliver real-time card synthesis to you. Third-party AI providers handle requests under strict developer agreements prohibiting the retention of user content in public training pools.</p>
-      </div>
-    </div>
-
-    <!-- Section 3 -->
-    <div class="section">
-      <h2>3. Third-Party AI Model Providers</h2>
-      <p>To provide high-accuracy natural language understanding and 12-tag categorization, the App integrates compliant large language model APIs (such as DeepSeek API):</p>
-      <ul>
-        <li><b>Text-Only Processing</b>: Only extracted plain text snippets are transmitted to infer titles and categories. <b>Raw image pixels are never uploaded.</b></li>
-        <li><b>Stateless Processing</b>: API calls are stateless and ephemeral, containing no personal identity tokens. Upon returning structured JSON, data is not stored in ongoing user profiles.</li>
-        <li><b>Public Metadata Retrieval</b>: For open-source projects or public articles, the App may query public search indices (such as DuckDuckGo snippet summaries or GitHub open APIs) for official URLs. No private user data is involved.</li>
-      </ul>
-    </div>
-
-    <!-- Section 4 -->
-    <div class="section">
-      <h2>4. On-Device Local Sandbox &amp; User Control</h2>
-      <ul>
-        <li><b>On-Device Local Sandbox Storage</b>: All original screenshots, inspiration cards, category tags, and thoughts are stored 100% locally within your device's App Sandbox and local shared container (App Group: <code>group.com.arcade.screenshottodo</code>).</li>
-        <li><b>Zero Developer Databases</b>: The developer has never deployed, rented, or operated any centralized user database servers. The developer cannot view, access, or hold your private cards.</li>
-        <li><b>Full User Control &amp; Deletion</b>: You can edit or delete any card at any time. When you uninstall ScreenshotTodo from your device, all data within the local sandbox is completely and irreversibly erased by iOS.</li>
-        <li><b>iCloud Sync (Optional)</b>: If multi-device sync is enabled, all transmission and storage are managed directly via Apple's official end-to-end encrypted iCloud private containers. The developer has no access to your iCloud data.</li>
-      </ul>
-    </div>
-
-    <!-- Section 5 -->
-    <div class="section">
-      <h2>5. Zero Third-Party Advertising &amp; Zero Trackers</h2>
-      <ul>
-        <li><b>No Advertising SDKs</b>: The App contains zero commercial advertising SDKs (such as AdMob, Pangle, or Tencent Ads).</li>
-        <li><b>No Tracking Frameworks</b>: The App contains zero user analytics frameworks (such as Firebase, Google Analytics, or Flurry).</li>
-        <li><b>No Sale of Data</b>: We do not collect Advertising Identifiers (IDFA), unique device identifiers (UUID), or device fingerprints. We never sell or share user data for cross-context behavioral advertising.</li>
-      </ul>
-    </div>
-
-    <!-- Section 6 -->
-    <div class="section">
-      <h2>6. Automated Processing &amp; Limitations</h2>
-      <p>ScreenshotTodo utilizes automated algorithms and large language models to generate tags, summaries, and action steps. Outputs may occasionally be incomplete or misclassified. ScreenshotTodo is designed for personal inspiration and note management; please do not rely on it for critical legal, financial, or medical decisions.</p>
-    </div>
-
-    <!-- Section 7 -->
-    <div class="section">
-      <h2>7. Policy Updates</h2>
-      <p>We may update this Privacy Policy to reflect product improvements or Apple Developer Policy guidelines. Any changes will be posted on this page with an updated effective date.</p>
-    </div>
-
-    <!-- Section 8 -->
-    <div class="section">
-      <h2>8. Contact Developer</h2>
-      <p>If you have any questions, feedback, or requests regarding this Privacy Policy or your data security, please contact the developer directly at:</p>
-      <p><a href="mailto:yebaihan@qq.com">yebaihan@qq.com</a></p>
-    </div>
-
-    <!-- Footer Nav -->
-    <div class="footer-nav">
-      <div class="footer-copy">© 2026 ScreenshotTodo. All rights reserved.</div>
-      <div class="footer-links">
-        <a href="privacy_en.html" aria-current="page">PRIVACY POLICY</a>
-        <a href="terms_en.html">TERMS OF USE (EULA)</a>
-      </div>
-    </div>
-
-  </div>
-</div>
-
+        (function () {
+            var saved = localStorage.getItem('lang');
+            if (saved === 'zh') {
+                document.body.classList.remove('show-en');
+            }
+            syncLangLinks(document.body.classList.contains('show-en'));
+        })();
+    </script>
 </body>
 </html>

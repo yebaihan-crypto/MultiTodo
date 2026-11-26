@@ -87,7 +87,42 @@ body {
   padding: 0 .4em;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.appstore-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  letter-spacing: .04em;
+  color: hsl(var(--foreground) / .88);
+  text-decoration: none;
+  padding: 4px 10px;
+  background: hsl(var(--surface));
+  border: 1px solid hsl(var(--border));
+  border-radius: 4px;
+  transition: all .2s ease;
+}
+
+.appstore-pill:hover {
+  color: hsl(var(--foreground));
+  border-color: hsl(var(--foreground) / .45);
+  background: hsl(var(--callout-bg));
+}
+
+.appstore-pill svg {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+}
+
 .lang-switch a {
+  display: inline-flex;
+  align-items: center;
   font-size: 12px;
   letter-spacing: .08em;
   color: hsl(var(--foreground) / .65);
@@ -230,10 +265,75 @@ body {
   line-height: 1.6;
 }
 
+/* ---------- App Store CTA Card (Legal Subpages) ---------- */
+
+.cta-card {
+  margin: 44px 0 0;
+  padding: 18px 20px;
+  background: hsl(var(--surface));
+  border: 1px solid hsl(var(--border));
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.cta-meta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.cta-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 11px;
+  border: 1px solid hsl(var(--border));
+  display: block;
+  flex-shrink: 0;
+}
+
+.cta-title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: hsl(var(--foreground));
+}
+
+.cta-sub {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: hsl(var(--muted));
+}
+
+.pill-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 9px 18px;
+  border-radius: 9999px;
+  background: #ffffff;
+  color: #000000;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "SF Pro Display", "PingFang SC", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: transform .15s ease, opacity .15s ease;
+}
+
+.pill-btn-primary:hover {
+  opacity: .9;
+  transform: translateY(-1px);
+}
+
 /* ---------- Footer Navigation ---------- */
 
 .footer-nav {
-  margin-top: 56px;
+  margin-top: 40px;
   padding-top: 24px;
   border-top: 1px solid hsl(var(--border) / .6);
   display: flex;
@@ -250,7 +350,8 @@ body {
 
 .footer-links {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 16px 20px;
 }
 
 .footer-links a {
@@ -274,10 +375,18 @@ body {
   }
   .header-row {
     margin-bottom: 32px;
+    gap: 12px;
   }
   .crumb {
     font-size: 12px;
     letter-spacing: .12em;
+  }
+  .cta-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .pill-btn-primary {
+    width: 100%;
   }
   .footer-nav {
     flex-direction: column;

@@ -1,144 +1,179 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#000000">
-  <title>隐私政策 — 截图即待办</title>
-  <meta name="description" content="截图即待办官方隐私政策。深度借鉴 Pool 合规标准：了解截图即待办如何处理您的屏幕截图、文本闪念、AI 智能归类与本地沙盒存储，含绝不用作模型训练承诺与零第三方追踪。">
-  <link rel="icon" href="assets/app-icon.png">
-  <link rel="stylesheet" href="pool.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <meta name="apple-itunes-app" content="app-id=6780206676">
+    <title>截图即待办 — 截屏即灵感，随手变成待办</title>
+    <meta name="description" content="截图即待办 (ScreenshotTodo) 是一款为去待办与灵感收藏而生的极简纯本地 iOS 工具。Vision 本地 OCR 提取、语音速记 AI 归类、锁屏组件与 100% 本地沙盒隐私保护。">
+    <link rel="icon" type="image/png" href="assets/app-icon.png">
+    <link rel="apple-touch-icon" href="assets/app-icon.png">
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
+    <header>
+        <a href="index.html" class="logo" data-zh-href="index.html" data-en-href="index_en.html">
+            <span class="lang-zh">截图即待办</span>
+            <span class="lang-en">ScreenshotTodo</span>
+        </a>
+        <nav>
+            <a href="index.html" class="nav-link nav-home active" data-zh-href="index.html" data-en-href="index_en.html">
+                <span class="lang-zh">首页</span>
+                <span class="lang-en">Home</span>
+            </a>
+            <a href="privacy.html" class="nav-link" data-zh-href="privacy.html" data-en-href="privacy_en.html">
+                <span class="lang-zh">隐私政策</span>
+                <span class="lang-en">Privacy</span>
+            </a>
+            <a href="terms.html" class="nav-link" data-zh-href="terms.html" data-en-href="terms_en.html">
+                <span class="lang-zh">使用条款</span>
+                <span class="lang-en">Terms</span>
+            </a>
+            <a href="mailto:yebaihan@qq.com" class="nav-link">
+                <span class="lang-zh">支持</span>
+                <span class="lang-en">Support</span>
+            </a>
+            <button class="lang-toggle" onclick="toggleLanguage()" aria-label="Switch language">
+                <span class="lang-zh">EN</span>
+                <span class="lang-en">中文</span>
+            </button>
+        </nav>
+    </header>
 
-<div class="dotted-bg">
-  <div class="page">
+    <main>
+        <section class="hero">
+            <img class="app-icon" src="assets/app-icon.png" alt="ScreenshotTodo app icon">
+            <h1>
+                <span class="lang-zh">截屏即灵感，<br>随手变成待办</span>
+                <span class="lang-en">Capture screenshots.<br>Turn ideas into action.</span>
+            </h1>
+            <p class="subtitle">
+                <span class="lang-zh">一款为去待办与灵感收藏而生的极简纯本地工具</span>
+                <span class="lang-en">A minimalist on-device vault for screenshots, voice notes &amp; smart tasks</span>
+            </p>
+            <div class="download-container">
+                <a href="https://apps.apple.com/app/id6780206676" target="_blank" rel="noopener noreferrer" class="download-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91 1.65.17 2.75.92 3.4 1.84-2.73 1.5-2.22 5.09.43 6.13-.57 1.54-1.38 3.01-2.04 4.09z"/>
+                        <path d="M15.11 6.19C15.82 5.3 16.29 4.09 16.16 2.87c-1.12.05-2.43.76-3.17 1.63-.66.77-1.22 2.01-1.07 3.2 1.24.1 2.47-.63 3.19-1.51z"/>
+                    </svg>
+                    <span class="lang-zh">App Store (iOS / iPad)</span>
+                    <span class="lang-en">App Store (iOS / iPad)</span>
+                </a>
+            </div>
+        </section>
 
-    <!-- Header & Language Switch -->
-    <div class="header-row">
-      <p class="crumb"><a href="privacy.html">截图即待办</a><span class="sep">/</span>PRIVACY POLICY</p>
-      <div class="lang-switch">
-        <a href="privacy_en.html">EN</a>
-      </div>
-    </div>
+        <section class="showcase" aria-label="App Screenshots">
+            <div class="showcase-grid">
+                <figure class="showcase-item">
+                    <img src="assets/screenshots/screen-01.jpg" alt="Instant Screenshot To-Do" loading="eager">
+                </figure>
+                <figure class="showcase-item">
+                    <img src="assets/screenshots/screen-02.jpg" alt="Voice Input and AI Organization" loading="lazy">
+                </figure>
+                <figure class="showcase-item">
+                    <img src="assets/screenshots/screen-03.jpg" alt="Lock-screen Widgets" loading="lazy">
+                </figure>
+                <figure class="showcase-item">
+                    <img src="assets/screenshots/screen-04.jpg" alt="1-Month Free Trial Lockscreen Todolist" loading="lazy">
+                </figure>
+            </div>
+        </section>
 
-    <!-- Title & Effective Date -->
-    <div class="section">
-      <h1 class="page-title">隐私政策</h1>
-      <p class="note">生效日期：2026 年 9 月 30 日</p>
-      <p>「截图即待办」应用（以下简称“本应用”或“我们”）致力于帮助用户无压力地捕捉、理解、整理与收藏屏幕截图、灵感闪念及剪贴板内容（践行“去待办灵感收藏”理念）。</p>
-      <p>鉴于用户的屏幕截图与随手速记往往包含高度私密的个人内容，本隐私政策旨在以<b>直接、严谨且透明</b>的条款，向您说明我们处理哪些数据、如何使用 AI 技术理解内容、数据如何留存，以及您拥有的完全控制权。</p>
-    </div>
+        <section class="features">
+            <div class="feature-card">
+                <h3>
+                    <span class="lang-zh">截屏即刻识别，结构化归纳</span>
+                    <span class="lang-en">Instant Screenshot To-Do</span>
+                </h3>
+                <p>
+                    <span class="lang-zh">调用 Apple 原生 Vision 框架在本地提取截图文字、时间与来源应用，自动整理成日程、书影音、好物或行动待办，告别杂乱相册。</span>
+                    <span class="lang-en">Extracts text, dates, and source apps locally via Apple Vision OCR—turning screenshots into structured tasks and 12 curated inspiration vaults.</span>
+                </p>
+            </div>
+            <div class="feature-card">
+                <h3>
+                    <span class="lang-zh">语音速记，AI 智能拆解</span>
+                    <span class="lang-en">Voice Input &amp; AI Sorting</span>
+                </h3>
+                <p>
+                    <span class="lang-zh">长按即说，iOS 原生语音实时本地转写，一口气记下的多件事也能被 AI 自动拆解并归类到对应标签下。</span>
+                    <span class="lang-en">Dictate fleeting thoughts on-device with native Speech recognition and let AI automatically break down and organize multi-part tasks.</span>
+                </p>
+            </div>
+            <div class="feature-card">
+                <h3>
+                    <span class="lang-zh">锁屏组件与实时看板</span>
+                    <span class="lang-en">Lock-Screen Widgets</span>
+                </h3>
+                <p>
+                    <span class="lang-zh">丰富的锁屏小组件与实时活动卡片，取件码、日程提醒与日常习惯抬眼即见，顺手完成而不被死线焦虑绑架。</span>
+                    <span class="lang-en">Access reminders, schedules, and daily routines directly from your iOS Lock Screen and Live Activities at a glance.</span>
+                </p>
+            </div>
+            <div class="feature-card">
+                <h3>
+                    <span class="lang-zh">100% 本地沙盒，零追踪</span>
+                    <span class="lang-en">100% On-Device Privacy</span>
+                </h3>
+                <p>
+                    <span class="lang-zh">免注册登录，无任何广告或行为追踪 SDK。所有截图原图与灵感卡片均保存在设备本地沙盒，绝不用作模型训练。</span>
+                    <span class="lang-en">Zero accounts, zero trackers, and zero ad SDKs. Screenshots and cards stay strictly inside your device sandbox and are never used for AI training.</span>
+                </p>
+            </div>
+        </section>
+    </main>
 
-    <hr class="rule">
+    <footer>
+        <div class="footer-links">
+            <a href="https://apps.apple.com/app/id6780206676" target="_blank" rel="noopener noreferrer">
+                <span class="lang-zh">App Store 下载</span>
+                <span class="lang-en">App Store</span>
+            </a>
+            <a href="privacy.html" data-zh-href="privacy.html" data-en-href="privacy_en.html">
+                <span class="lang-zh">隐私政策</span>
+                <span class="lang-en">Privacy Policy</span>
+            </a>
+            <a href="terms.html" data-zh-href="terms.html" data-en-href="terms_en.html">
+                <span class="lang-zh">使用条款 (EULA)</span>
+                <span class="lang-en">Terms of Use (EULA)</span>
+            </a>
+            <a href="mailto:yebaihan@qq.com">
+                <span class="lang-zh">联系开发者</span>
+                <span class="lang-en">Support</span>
+            </a>
+        </div>
+        <div class="copyright">
+            <span class="lang-zh">&copy; 2026 截图即待办. 保留所有权利。</span>
+            <span class="lang-en">&copy; 2026 ScreenshotTodo. All rights reserved.</span>
+        </div>
+    </footer>
 
-    <!-- Section 1 -->
-    <div class="section">
-      <h2>1. 我们处理的信息类型</h2>
-      <p><b>您主动提供与导入的内容</b>：</p>
-      <ul>
-        <li>您主动选择导入或通过快捷指令“瞬移”存入的屏幕截图与图片。</li>
-        <li>随手记录的纯文字闪念 (Thought)、灵感笔记、复制到剪贴板的链接或文本。</li>
-      </ul>
+    <script>
+        function syncLangLinks(isEn) {
+            document.documentElement.lang = isEn ? 'en' : 'zh-CN';
+            document.title = isEn
+                ? 'ScreenshotTodo — Capture screenshots. Turn ideas into action.'
+                : '截图即待办 — 截屏即灵感，随手变成待办';
+            document.querySelectorAll('a[data-zh-href][data-en-href]').forEach(function (el) {
+                el.setAttribute('href', isEn ? el.dataset.enHref : el.dataset.zhHref);
+            });
+        }
 
-      <p><b>系统权限与设备来源</b>：</p>
-      <ul>
-        <li><b>照片图库访问 (Photo Library)</b>：仅用于读取您主动挑选或由快捷指令传入的截图。我们绝不在后台暗中扫描您的私人相册。</li>
-        <li><b>麦克风与语音识别 (Microphone &amp; Speech)</b>：仅在您主动长按语音按钮速记闪念时调用，音频由 iOS 原生框架在本地实时转写为文本，绝不向外上传音频。</li>
-        <li><b>系统提醒事项 (EventKit)</b>：仅在您明确选择将卡片同步导出到系统日历与提醒事项时调用。</li>
-        <li><b>位置权限 (Location When In Use)</b>：仅用于在您查看地点卡片时在设备本地计算实时距离，不记录行踪轨迹，亦不上传位置。</li>
-      </ul>
+        function toggleLanguage() {
+            var isEn = document.body.classList.toggle('show-en');
+            localStorage.setItem('lang', isEn ? 'en' : 'zh');
+            syncLangLinks(isEn);
+        }
 
-      <p><b>衍生数据与 AI 智能推断 (Derived Data &amp; Inferences)</b>：</p>
-      <ul>
-        <li>使用 Apple 原生 <code>Vision</code> 框架在设备本地从截图中识别提取的文字 (OCR)。</li>
-        <li>推断出的结构化标签：12 大灵感分类（日程 Schedule、电影 Movie、图书 Book、音乐 Music、日常探店 Routine、旅行胜地 Place、优惠卡券 PromoCode、心愿好物 Wishlist、博主主页 Profile、短视频 Video、行动待办 Action、纯图 Photo）。</li>
-        <li>由 AI 智能提炼生成的精炼标题、Emoji 标志符号、行动要点 (Todos) 与摘要。</li>
-      </ul>
-
-      <p><b>免登录架构</b>：截图即待办无账号体系，无需注册，不收集手机号、邮箱或任何第三方社交账号，亦不关联个人真实身份。</p>
-    </div>
-
-    <!-- Section 2 -->
-    <div class="section">
-      <h2>2. 信息的使用与 AI 处理机制</h2>
-      <p>我们处理上述信息仅为交付截图即待办的核心产品体验：</p>
-      <ul>
-        <li>为您提取截图核心要点，生成高密度的斜切扇形堆叠灵感卡片。</li>
-        <li>智能分类归入 12 大预设灵感标签，构筑清晰的私人灵感宇宙。</li>
-        <li>驱动锁屏与灵动岛实时轻量看板，提供无压力的生活陪伴。</li>
-      </ul>
-
-      <!-- Pool-style Callout -->
-      <div class="callout-box">
-        <h4>🔒 绝不用作 AI 训练承诺 (No Training on Your Content)</h4>
-        <p><b>我们绝不使用您的任何屏幕截图、私密笔记、提取文本或由此衍生的任何数据来训练或微调 AI / 机器学习大模型。</b><br>
-        您的所有内容仅用于向您即时交付卡片整理服务；第三方大模型服务商同样受严格的开发者协议约束，禁止将您的数据留存于公共模型训练集。</p>
-      </div>
-    </div>
-
-    <!-- Section 3 -->
-    <div class="section">
-      <h2>3. 第三方 AI 模型提供商披露</h2>
-      <p>为了向您提供高精度的语义归纳与 12 大标签分类，本应用接入了合规的大语言模型接口（如 DeepSeek API）：</p>
-      <ul>
-        <li><b>仅传输纯文本片段</b>：调用大模型接口时，<b>仅发送从截图中识别出的文字摘要</b>，绝不上传整张相册原图。</li>
-        <li><b>即时无状态处理</b>：API 请求为单次即时调用 (Stateless)，不包含用户身份标识，处理完成后即时返回结构化卡片结果，不保留跨会话用户画像。</li>
-        <li><b>公开元数据检索（辅助性）</b>：针对特定开源项目或公开网页，可能通过公开搜索引擎（如 DuckDuckGo 网页摘要、GitHub 开放 API）检索官方网址，不关联用户私密信息。</li>
-      </ul>
-    </div>
-
-    <!-- Section 4 -->
-    <div class="section">
-      <h2>4. 本地沙盒存储与绝对掌控权</h2>
-      <ul>
-        <li><b>本机沙盒存储 (On-Device Local Sandbox)</b>：您的所有截图原图、灵感卡片、分类标签与随手记笔记均 100% 留存在您本机的 App Sandbox 及本地私有容器 (App Group: <code>group.com.arcade.screenshottodo</code>) 中。</li>
-        <li><b>开发者零用户数据库</b>：开发者未搭建、未租用、未运营任何用于收集或储存用户个人数据的中心化服务器。开发者无法访问、无法查看、亦未留存您的私有卡片。</li>
-        <li><b>用户完全控制与彻底删除</b>：您可以随时在应用内单条删除或批量清空卡片；卸载应用将彻底清空本地沙盒中的所有数据。</li>
-        <li><b>iCloud 同步（可选）</b>：若开启系统 iCloud 备份，数据直接经由 Apple 官方端到端加密通道传输，开发者无法读取。</li>
-      </ul>
-    </div>
-
-    <!-- Section 5 -->
-    <div class="section">
-      <h2>5. 零广告与零第三方追踪</h2>
-      <ul>
-        <li><b>无第三方广告 SDK</b>：本应用不包含任何商业广告投放 SDK（如穿山甲、优量汇、AdMob 等）。</li>
-        <li><b>无行为追踪 SDK</b>：本应用不包含任何第三方用户行为分析与追踪框架（如 Firebase、Google Analytics、友盟等）。</li>
-        <li><b>绝不买卖个人信息</b>：我们不收集广告标识符 (IDFA)、设备唯一码 (UUID) 或设备指纹，绝不向任何第三方数据公司出售您的数据。</li>
-      </ul>
-    </div>
-
-    <!-- Section 6 -->
-    <div class="section">
-      <h2>6. 自动化处理的重要局限</h2>
-      <p>截图即待办使用自动化算法与大模型生成卡片标签、摘要与步骤。这些输出受自然语言处理能力的客观局限，可能存在不完整或识别偏差。截图即待办仅供个人灵感收藏与信息整理，请勿将其作为法律、金融、医疗或关键生活决策的依据。</p>
-    </div>
-
-    <!-- Section 7 -->
-    <div class="section">
-      <h2>7. 政策更新</h2>
-      <p>我们可能会根据功能更新或 Apple 开发者审核规范适时修订本隐私政策。任何修订都会在此页面发布并更新顶部的生效日期。建议您定期查阅以获取最新信息。</p>
-    </div>
-
-    <!-- Section 8 -->
-    <div class="section">
-      <h2>8. 联系开发者</h2>
-      <p>如果您对本隐私政策、数据处理方式或个人数据安全有任何疑问、建议或请求，欢迎通过以下邮箱与我们直接联系：</p>
-      <p><a href="mailto:yebaihan@qq.com">yebaihan@qq.com</a></p>
-    </div>
-
-    <!-- Footer Nav -->
-    <div class="footer-nav">
-      <div class="footer-copy">© 2026 截图即待办. 保留所有权利。</div>
-      <div class="footer-links">
-        <a href="privacy.html" aria-current="page">PRIVACY POLICY</a>
-        <a href="terms.html">TERMS OF USE (EULA)</a>
-      </div>
-    </div>
-
-  </div>
-</div>
-
+        (function () {
+            var saved = localStorage.getItem('lang');
+            if (saved === 'en') {
+                document.body.classList.add('show-en');
+            }
+            syncLangLinks(document.body.classList.contains('show-en'));
+        })();
+    </script>
 </body>
 </html>
